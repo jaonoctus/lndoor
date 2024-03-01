@@ -1,0 +1,33 @@
+{
+  "name": "lndoor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts",
+    "preview": "node dist/index.js | bunyan",
+    "start:prod": "prisma migrate deploy && npm run preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "5.10.2",
+    "bunyan": "1.8.15",
+    "dotenv": "16.4.5",
+    "express": "4.18.3",
+    "lightning": "10.6.1",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "@types/bunyan": "1.8.11",
+    "@types/express": "4.17.21",
+    "@types/node": "20.11.24",
+    "prisma": "5.10.2",
+    "ts-node": "10.9.2",
+    "tsup": "8.0.2",
+    "tsx": "4.7.1",
+    "typescript": "5.3.3"
+  }
+}

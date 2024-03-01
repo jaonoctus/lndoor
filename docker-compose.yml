@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  lndoor:
+    image: jaonoctus/lndoor
+    env_file: .env
+    ports:
+      - "3001:3001"
